@@ -1,0 +1,4 @@
+docker run --name bind -d --restart=always \
+  -p 53:53/tcp -p 53:53/udp \
+  -v /srv/docker/bind:/data \
+  sameersbn/bind
